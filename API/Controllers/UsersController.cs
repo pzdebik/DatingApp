@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")] // api/users
-    public class UsersController : ControllerBase
+    public class UsersController : BaseApiController // dziedziczenie - nie musimy używać atrybutów
     {
         private readonly DataContext _context;
 
