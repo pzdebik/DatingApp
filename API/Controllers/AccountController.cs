@@ -18,7 +18,8 @@ namespace API.Controllers
         }
         
         [HttpPost("register")] // POST: api/account/register
-        public async Task<ActionResult<AppUser>> Register(RegisterDto registerDto)
+        //nie muszę dodawać atrybutu [From Body przed RegisterDto], ponieważ dziedziczę z BaseApiController
+        public async Task<ActionResult<AppUser>> Register(RegisterDto registerDto) 
         {
             if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
             // przez użycie 'using', jeśli skończymy z tą klasą wywoła się metoda Dispose, która usunię ją (klasę) z pamięci
