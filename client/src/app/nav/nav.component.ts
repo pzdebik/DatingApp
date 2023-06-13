@@ -17,7 +17,7 @@ export class NavComponent implements OnInit {
   }
 
   getCurrentUser(){
-    this.accountService.currentUser$.subscribe({
+    this.accountService.currentUser$.subscribe({ // powiadamiania AccountService o zmianach w bieżącym użytkowniku.
       next: user => this.loggedIn = !!user,
       error: error => console.log(error)
     })
