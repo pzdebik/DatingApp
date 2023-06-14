@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
+import { ListsComponent } from './lists/lists.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
     RegisterComponent,
     MemberListComponent,
     MemberDetailComponent,
+    ListsComponent,
   ],
   imports: [
     BrowserAnimationsModule,
