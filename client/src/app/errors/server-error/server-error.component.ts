@@ -7,11 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./server-error.component.css']
 })
 export class ServerErrorComponent implements OnInit {
-  error: any;
+  error: any; // właściwość będzie przechowywać info o błędzie
 
-  constructor(private router: Router) {
-    const navigation = this.router.getCurrentNavigation();
-    this.error = navigation?.extras?.state?.['error']
+  constructor(private router: Router) { // wstrzykujemy obiekt Router, który umożliwia nawigację w aplikacji Angulara
+    const navigation = this.router.getCurrentNavigation(); // pobiera info o aktualnej nawigacji
+    this.error = navigation?.extras?.state?.['error'] 
+    // "?." (optional chaining) sprawdza się, czy istnieją odpowiednie właściwości 
+    // w obiekcie nawigacji, a konkretnie extras.state['error']. 
+    // Jeśli tak, przypisuje się wartość tej właściwości do właściwości error komponentu.
    }
 
   ngOnInit(): void {
