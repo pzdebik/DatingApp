@@ -10,7 +10,9 @@ namespace API.Extensions
 
             var age = today.Year - dob.Year;
 
-            // jeśli nie miał jeszcze urodzin, odejmij 1 rok od wyliczeń ze zmiennej age
+            // -age oznacza, np. -30
+            // metoda AddYears odejmuję wartość -age od dzisiejszego roku, zrównując się z rokiem urodzin
+            // jeśli data w dob jest większa od daty w today, oznacza, że user nie miał jeszcze urodzin
             if (dob > today.AddYears(-age)) age--; 
 
             return age;
