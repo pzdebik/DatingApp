@@ -7,6 +7,8 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
 import { MessagesComponent } from './messages/messages.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { TestErrorComponent } from './errors/test-error/test-error.component';
+import { ServerErrorComponent } from './errors/server-error/server-error.component';
+import { NotFoundComponent } from './errors/not-found/not-found.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}, // path='' ponieważ jest to ścieżka strony głównej localhost:4200
@@ -21,7 +23,9 @@ const routes: Routes = [
     ]
   },
   {path: 'errors', component: TestErrorComponent},
-  {path: '**', component: HomeComponent, pathMatch:'full'} // ** reprezentuje to czego nie ma na liście ścieżek, czyli co się stanie jak user wpisze niepoprawną ścieżkę
+  {path: 'not-found', component: NotFoundComponent},
+  {path: 'server-error', component: ServerErrorComponent},
+  {path: '**', component: NotFoundComponent, pathMatch:'full'} // ** reprezentuje to czego nie ma na liście ścieżek, czyli co się stanie jak user wpisze niepoprawną ścieżkę
 ];
 
 @NgModule({
