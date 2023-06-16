@@ -4,6 +4,7 @@ namespace API.DTOs
     {
         public int Id { get; set; }
         public string UserName { get; set; }
+        public string PhotoUrl { get; set; } // zdj główne usera
         public int Age {get; set;} // autoMapper zapisze tutaj wartość metody GetAge() z encji AppUser
         public string KnownAs {get; set;}
         public DateTime Created {get; set;}
@@ -14,7 +15,7 @@ namespace API.DTOs
         public string Interests { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-
+        //wszystkie zdj usera
         public List<PhotoDto> Photos {get; set;}
     }
 }
