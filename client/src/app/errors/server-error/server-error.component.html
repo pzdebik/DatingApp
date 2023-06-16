@@ -1,1 +1,15 @@
-<p>server-error works!</p>
+<h4>Wewnętrzny błąd serwera- odświeżenie strony naprawi błąd</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-wieght-bold">Notka: Jeśli to widzisz, Angular nie jest winien</p>
+    <p>Kolejne kroki</p>
+    <ol>
+        <li>Otwórz dev tools. Następnie sprawdź w zakładce 'Sieć' zapytanie, które się nie powiodło</li>
+        <li>Sprawdź URL zapytania - do jakiego endpointa API wysyłasz zapytanie?</li>
+        <li>Sprawdź błąd w Postmanie - jeśli dostaniemy ten sam błąd, Angular nie jest winien</li>
+    </ol>
+    <p style="font-weight: bold;">To co poniżej to ślad stosu (stack trace) - pierwsze linijki kodu powiedzą Ci co spowodowało błąd</p>
+    <code class="mt-5" style="background-color: whitesmoke;">
+        {{error.details}}
+    </code>
+</ng-container>
