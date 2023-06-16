@@ -13,8 +13,8 @@
         "Country": "China",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/women/11.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/women/11.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -32,8 +32,8 @@
         "Country": "Montserrat",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/women/1.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/women/1.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -51,8 +51,8 @@
         "Country": "Iceland",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/women/73.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/women/73.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -70,8 +70,8 @@
         "Country": "Nauru",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/women/46.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/women/46.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -89,8 +89,8 @@
         "Country": "Heard and McDonald Islands",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/women/88.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/women/88.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -108,8 +108,8 @@
         "Country": "Reunion",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/men/43.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/men/43.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -127,8 +127,8 @@
         "Country": "Tunisia",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/men/99.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/men/99.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -146,8 +146,8 @@
         "Country": "Lesotho",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/men/61.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/men/61.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -165,8 +165,8 @@
         "Country": "Qatar",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/men/77.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/men/77.jpg",
+                "IsMain": true
             }
         ]
     },
@@ -184,8 +184,8 @@
         "Country": "United Kingdom",
         "Photos": [
             {
-                "url": "https://randomuser.me/api/portraits/men/98.jpg",
-                "isMain": true
+                "Url": "https://randomuser.me/api/portraits/men/98.jpg",
+                "IsMain": true
             }
         ]
     }
