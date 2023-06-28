@@ -11,6 +11,9 @@ export class MembersService {
 
   constructor(private http: HttpClient) { }
 
+  // Poniższe funkcje -- zwracają listę userów i konkretnego usera z api
+  // funkcje te będzie można używać w reszcie komponentów w folderze members
+
   getMembers() {
     return this.http.get<Member[]>(this.baseUrl + 'users');
   }
